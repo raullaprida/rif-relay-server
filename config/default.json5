@@ -5,7 +5,7 @@
     Server 
   */
   app: {
-    url: "http://127.0.0.1", // URL where the relay server will be deployed, it could be localhost or the IP of the host machine.
+    url: "http://127.0.0.1:8090", // URL where the relay server will be deployed, it could be localhost or the IP of the host machine.
     port: 8090, // port where the relay server will be hosted.
     devMode: false, // indicates to the server if we are in development mode or not.
     customReplenish: false, // set if the server uses a custom replenish function or not.
@@ -85,9 +85,9 @@
     Relay contracts addresses
   */
   contracts: {
-    relayHubAddress: "0x0000000000000000000000000000000000000000", // relay hub contract address, you can retrieve this from the contract summary.
-    relayVerifierAddress: "0x0000000000000000000000000000000000000000", // relay verifier contract address, you can retrieve this from the contract summary.
-    deployVerifierAddress: "0x0000000000000000000000000000000000000000", // deploy verifier contract address, you can retrieve this from the contract summary.
+    relayHubAddress: "0xDA7Ce79725418F4F6E13Bf5F520C89Cec5f6A974", // relay hub contract address, you can retrieve this from the contract summary.
+    relayVerifierAddress: "0x03F23ae1917722d5A27a2Ea0Bcc98725a2a2a49a", // relay verifier contract address, you can retrieve this from the contract summary.
+    deployVerifierAddress: "0x73ec81da0C72DD112e06c09A6ec03B5544d26F05", // deploy verifier contract address, you can retrieve this from the contract summary.
     feesReceiver: "0x0000000000000000000000000000000000000000",
     trustedVerifiers: [],
   },
@@ -95,8 +95,8 @@
     stake: "0.01", // amount of stake to set up
     funds: "0.02", // amount of funds to set up
     mnemonic: "", // mnemonic to use for unlocking the account parameter; DO NOT STORE IT HERE, use REGISTER_MNEMONIC as env variable. 
-    privateKey: "", // private key to retrieve the account address from; DO NOT STORE IT HERE, use REGISTER_PRIVATE_KEY as env variable. 
-    relayHub: "",
+    privateKey: "0c06818f82e04c564290b32ab86b25676731fc34e9a546108bf109194c8e3aae", // private key to retrieve the account address from; DO NOT STORE IT HERE, use REGISTER_PRIVATE_KEY as env variable. 
+    relayHub: "0xDA7Ce79725418F4F6E13Bf5F520C89Cec5f6A974",
     gasPrice: 60000000,
     unstakeDelay: 1000,
   },
